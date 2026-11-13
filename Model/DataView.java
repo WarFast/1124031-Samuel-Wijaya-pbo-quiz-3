@@ -18,6 +18,19 @@ abstract class DataView<T> {
         }
     }
     public void printByPk(String primaryKey){
-        for (T value : data) {}
+        for (T value : data) {
+            System.out.println(value);
+        }
+
     }
+    public void showInsertForm(){
+
+    }
+    public void showUpdateForm(){
+
+    }
+    public void promptDelete(){
+
+    }
+
 }
