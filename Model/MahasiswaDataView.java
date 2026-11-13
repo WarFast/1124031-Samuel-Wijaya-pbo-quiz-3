@@ -1,6 +1,10 @@
 package Model;
 
+import java.util.List;
+
 public class MahasiswaDataView extends DataView<Mahasiswa> {
+
+
 
     @Override
     protected String getPrimaryKeyValue(Mahasiswa data) {

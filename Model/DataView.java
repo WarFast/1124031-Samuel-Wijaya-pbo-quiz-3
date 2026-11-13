@@ -3,7 +3,7 @@ package Model;
 import java.util.ArrayList;
 import java.util.List;
 
-abstract class DataView<T extends Mahasiswa> {
+public abstract class DataView<T > {
     private final List<T> data = new ArrayList<>();
     public void add(T value) {
         data.add(value);
