@@ -2,9 +2,11 @@ package Model;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Scanner;
 
 public abstract class DataView<T extends Mahasiswa> {
     private final List<T> records = new ArrayList<>();
+    Scanner sc = new Scanner(System.in);
     public void add(T value) {
         records.add(value);
     }
@@ -35,8 +37,11 @@ public abstract class DataView<T extends Mahasiswa> {
     public void showInsertForm(){
     String []fields = this.getFields();
     for (int i = 0; i < this.records.size(); i++) {
-        System.out.println(fields[i]);
+        System.out.println(fields[i]+" ");
+        System.out.println("i+1");
+
     }
+    this.convertValuesToModel(fields);
     }
     public void showUpdateForm(){
     String []fields = this.getFields();
