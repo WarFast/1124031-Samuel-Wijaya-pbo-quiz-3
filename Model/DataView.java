@@ -3,7 +3,7 @@ package Model;
 import java.util.ArrayList;
 import java.util.List;
 
-abstract class DataView<T> {
+abstract class DataView<T extends Mahasiswa> {
     private final List<T> data = new ArrayList<>();
     public void add(T value) {
         data.add(value);
@@ -32,5 +32,11 @@ abstract class DataView<T> {
     public void promptDelete(){
 
     }
+    protected abstract String getPrimaryKeyValue(T data);
+    protected abstract String[] getFields();
+    protected abstract T convertValuesToModel(String[]values);
+    protected abstract String[] convertModelToValues(T data);
+
+
 
 }

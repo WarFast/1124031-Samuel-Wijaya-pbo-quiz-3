@@ -2,17 +2,17 @@ package Model;
 
 public class Mahasiswa {
     private final String nim;
-    private final String name;
+    private final String nama;
     private final String email;
-    private final int usia;
-    public Mahasiswa(String nim,String name,String email,int usia) {
-        this.name = name;
+    private final int umur;
+    public Mahasiswa(String nim,String nama,String email,int umur) {
+        this.nama = nama;
         this.nim = nim;
         this.email = email;
-        this.usia = usia;
+        this.umur = umur;
     }
-    public String getName() {
-        return name;
+    public String getNama() {
+        return nama;
     }
     public String getNim() {
         return nim;
@@ -20,7 +20,7 @@ public class Mahasiswa {
     public String getEmail() {
         return email;
     }
-    public int getUsia() {
-        return usia;
+    public int getUmur() {
+        return umur;
     }
 }
